@@ -1,0 +1,241 @@
+.header {
+	width: 100%;
+	overflow: hidden;
+	background-image: linear-gradient(to left, rgb(10, 172, 247), #003a55);
+	color: orange;
+	border-radius: 20px;
+	left: 0;
+	right: 0;
+}
+
+.header img.logo {
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	padding-left: 5px;
+}
+
+.footer {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background-image: linear-gradient(to left, rgb(10, 172, 247), #003a55);
+	color: orange;
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	padding-top: 20px;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+.centered img {
+	width: 150px;
+	border-radius: 50%;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* The sidebar menu */
+.sidenav1 {
+	height: 73%;
+	/* Full-height: remove this if you want "auto" height */
+	width: 200px;
+	/* Set the width of the sidebar */
+	position: fixed;
+	/* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1;
+	/* Stay on top */
+	top: 114px;
+	/* Stay at the top */
+	left: 0;
+	background-image: linear-gradient(to bottom, black, white);
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 20px;
+	color: white;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+th {
+	text-align: center;
+	overflow: auto;
+	padding: 8px;
+}
+
+td {
+	text-align: center;
+	overflow: auto;
+	padding: 8px;
+}
+
+.previous {
+	color: white;
+}
+
+.next {
+	color: white;
+}
+
+button {
+	background-color: white;
+}
+
+body {
+	background-blend-mode: lighten;
+}
+
+input {
+	border-radius: 10px;
+}
+
+.column {
+	float: left;
+	width: 32%;
+	padding: 25px;
+	overflow: auto;
+}
+
+.column-right {
+	float: right;
+	width: 20%;
+	padding: 25px;
+	overflow: hidden;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+	margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+	.column, .column-right {
+		margin: 20px;
+		width: 100%;
+		display: block;
+	}
+}
+
+/* Style the counter cards */
+.card {
+	padding: 16px;
+	text-align: center;
+	height: 250px;
+	color: white;
+}
+
+.card img {
+	height: 210px;
+	width: 250px;
+}
+
+.card-right {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: white;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: white;
+	height: 250px;
+	color: black;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	color: white;
+	background-color: white;
+}
+
+.home {
+	/* The image used */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("images/pill.jpg");
+	/* Full height */
+	height: 100%;
+	overflow: auto;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.medication {
+	/* The image used */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("images/medication.jpg");
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+}
+
+.calendar {
+	/* The image used */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("images/calendarbg.jpg");
+	/* Full height */
+	height: 100%;
+	overflow: auto;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+select {
+	border-radius: 20px;
+}
